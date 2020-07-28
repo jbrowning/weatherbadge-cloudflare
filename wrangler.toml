@@ -1,0 +1,6 @@
+name = "weatherbadge"
+type = "webpack"
+account_id = "98bc09aa98c4fffc7d93db9d510c1d8b"
+workers_dev = true
+route = ""
+zone_id = "bb8faf91e43f69b4227148bca9795fc8"
