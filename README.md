@@ -1,15 +1,19 @@
-# 👷 `worker-template` Hello World
+# ⛈ weatherbadge (cloudflare workers edition)
 
-A template for kick starting a Cloudflare worker project.
+A simple weather badge endpoint for [shields.io](https://shields.io) consumption.
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
+## Usage
 
-#### Wrangler
-
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
+Visit [https://shields.io/endpoint](https://shields.io/endpoint) and enter the following url:
 
 ```
-wrangler generate projectname https://github.com/cloudflare/worker-template
+https://weatherbadge.tenoctober.workers.dev?lat=YOUR_LAT&lon&YOUR_LON
 ```
 
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+## Deploy yourself
+
+1. Fork this repo
+2. [Install and configure @cloudflare/wrangler](https://developers.cloudflare.com/workers/quickstart)
+3. Modify the default `DEFAULT_LAT`/`DEFAULT_LON` as needed in `index.js`
+4. `$ wrangler publish`
+5.  💸
