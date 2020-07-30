@@ -9,7 +9,7 @@ const HEADERS = {
 export default async function(weatherParams) {
   let requestUrl = WEATHER_API_ENDPOINT + qs.stringify(weatherParams, { addQueryPrefix: true })
 
-  fetch(requestUrl, {
+  return fetch(requestUrl, {
     method: 'GET',
     headers: HEADERS
   })
